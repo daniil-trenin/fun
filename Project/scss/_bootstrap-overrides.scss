@@ -1,0 +1,62 @@
+.text-primary {
+    color: $theme-primary !important;
+}
+
+.btn-primary {
+    background: linear-gradient(to top, #f0412f, #f15242, #f36859);
+    border: none;
+    border-top: 1px solid #f89d89;
+    border-radius: 22px;
+    padding: 6px 0;
+    font-size: 24px;
+    cursor: pointer;
+    @include btn-font;
+    &:hover {
+        background: linear-gradient(to top, #ff6555, #ff7263, #ff8578);
+        border-top: 1px solid #ffbab3;
+    }
+    &:active {
+        background: linear-gradient(to top, #63241d, #703630, #84514c);
+        border-top: 1px solid #b97f78;
+    }
+   
+}
+
+.tabs-btn {
+    background: linear-gradient(to top, #42275e, #4f3569, #5a4372);
+    border-top: 1px solid #896cab;
+    border-right: 1px solid #978ca2;
+    border-bottom: 1px solid #a8a8a8;
+    border-left: 1px solid #7c5c9d;
+    border-radius: 22px;
+    padding: 10px 0;
+    font-size: 22px;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(to top, #793eb5, #814aba, #8a57be);
+        border-top: 1px solid #bc86da;
+        border-left: 1px solid #b877d7;
+    }   
+    &:active {
+        background: linear-gradient(to top, #20112d, #2d1f3a, #3b2e48);
+        border-top: 1px solid #625171;
+        border-left: 1px solid #523f63;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {font-size: 18px;}
+}
+
+.btn-xl {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 3px;
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1032px !important;
+        max-width: 100% !important;
+    }
+}

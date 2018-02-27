@@ -1,0 +1,24 @@
+{
+  "name": "opteck-test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "gulp-header": "^1.8.9",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniil Trenin",
+  "license": "ISC"
+}

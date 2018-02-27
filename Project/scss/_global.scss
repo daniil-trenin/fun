@@ -1,0 +1,109 @@
+body {
+    overflow-x: hidden;
+    @include body-font;
+}
+
+p {
+    line-height: 1.75;
+}
+
+a {
+    color: $theme-info;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: darken($theme-info, 10%);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    @include heading-font;
+}
+
+section {
+
+    h2.section-heading {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    h3.section-subheading {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 75px;
+        text-transform: none;
+        @include serif-font;
+    }
+}
+
+
+// Highlight color customization
+::-moz-selection {
+    background: $theme-info;
+    text-shadow: none;
+}
+
+::selection {
+    background: $theme-info;
+    text-shadow: none;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+
+.text-black {
+    color: #000;
+}
+
+.fw-thin {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fw-light {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+
+.fw-medium {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.l-h {
+    line-height: 1.25;
+}
+
+.fz-22 {
+    font-size: 22px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-19  {
+    margin-top: 19px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
